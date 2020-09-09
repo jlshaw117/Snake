@@ -1,11 +1,11 @@
-import {NotImplementedError} from "./errors";
+import {NotImplementedError} from "../utilities/errors";
 
 class BaseObject {
 
-    constructor(game, x, y) {
-        this.game = game;
+    constructor(x, y, color) {
         this.x = x;
         this.y = y;
+        this.color = color;
     }
 
     draw() {
