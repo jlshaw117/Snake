@@ -17,13 +17,13 @@ class Snake extends Base {
     move() {
         switch(this.direction) {
             case "N":
-                this.y += LENGTH;
+                this.y -= LENGTH;
                 break;
             case "E":
                 this.x += LENGTH;
                 break;
             case "S":
-                this.y -= LENGTH;
+                this.y += LENGTH;
                 break;
             case "W":
                 this.x -= LENGTH;
