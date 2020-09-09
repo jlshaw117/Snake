@@ -1,6 +1,5 @@
 import Base from "./base";
 import SnakePiece from "./snake_piece";
-import Snake from "./snake";
 
 class SnakeBody extends Base {
 
@@ -13,6 +12,14 @@ class SnakeBody extends Base {
         this.pieces.forEach(piece => {
             piece.draw(screen);
         });
+    }
+
+    addPiece(x, y) {
+        this.pieces.push(new SnakePiece(x, y, this.color));
+    }
+
+    removePiece() {
+        this.pieces.shift();
     }
 
 }
